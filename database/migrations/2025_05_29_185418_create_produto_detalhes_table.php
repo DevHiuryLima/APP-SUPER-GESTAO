@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('produtos_detahles', function (Blueprint $table) {
+        Schema::create('produto_detalhes', function (Blueprint $table) {
             $table->id();
             $table->float('comprimento', 8, 2);
             $table->float('largura', 8, 2);
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('produtos_detahles');
+        Schema::dropIfExists('produto_detalhes');
     }
 };
